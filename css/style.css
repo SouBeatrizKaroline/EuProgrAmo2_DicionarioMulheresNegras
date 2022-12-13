@@ -1,0 +1,171 @@
+/*
+width: propriedade que nos permite adicionar valores relacionados a largura de uma página ou elemento, bloco; 
+
+height: propriedade que nos permite adicionar valores relacionados a altura de uma página ou elemento, bloco;
+
+display: propriedade que nos permite definir o modo como vamos exibir um determinado bloco ou elemento;
+block, quebra de linha (um debaixo do outro), 
+inline (um do lado do outro),
+none (remove o elemento) ,
+inline-block (ele mantém um elemento do lado do outro, porém em comparação ao inline permite que a gente adicione largura/altura e espaçamentos no elemento. é um mix do block e do inline) 
+
+margin: margem que define os espaçamentos externos entre um bloco e outro; 
+
+padding: define os espaçamentos internos de um determinado bloco 
+
+color: define a cor do texto
+
+background-color: define a cor de fundo
+
+font-family: define a fonte do texto
+
+font-size: define o tamanho da fonte
+*/
+
+  /*
+  @media screen and (max/min-width) {..} 
+  @media - regra
+  screen - tipo
+  and - operador
+  (max/min-width) - feature
+
+  @media (max/min-width){...} - Estrutura básica
+  */
+
+body {
+/* Fonte: Open Sans, sem serifa */
+    font-family: Open Sans, sans-serif;
+  }
+  
+  header {
+    /* Altura 100px; 
+    borda inferior 1px sólida e na cor #000;
+    espaçamento externo inferior de 40px */
+    height: 100px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 768px) { /* para largura máxima de 768px*/
+    header {
+        /*Cabeçalho: espaçamento externo inferior 20px
+        altura 200px */
+         margin-bottom: 20px;
+         height: 200px;
+    }
+}
+
+  h1 {
+    /* Texto do cabeçalho: letras maiúsculas
+    espaçamento externo inferior 0 */
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+        /* Texto do cabeçalho: tamanho da fonte 36px */
+         font-size: 36px;
+    }
+}
+
+  section {
+    /* Seção dos cartões: espaçamento externo superior e inferior 0
+    espaçamento externo laterais automáticas
+    display block; largura máxima de 1024 px
+    largura 100% */
+    margin: 0 auto;
+    display: block;
+    max-width: 1024px;
+    width: 100%;
+  }
+  
+  .card {
+    /* Cartão: display inline-block
+    espaçamento externo 10px
+    borda 1px sólida e cor #000
+    alinhamento vertical top
+    altura máxima 100% */
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #000;
+    vertical-align: top;
+    max-height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+        /* Cartão: display block
+        espaçamento externo superior e inferior 20px
+        espaçamento externo laterais 10px */
+         display: block;
+         margin: 20px 10px;
+    }
+}
+
+  .card img {
+    /* Cartão (imagem): display block
+    largura 300px
+    altura 300px */
+    display: block;
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (max-width: 768px) {
+    .card img {
+        /* Cartão (imagem): largura 100%
+        altura 100% */
+         width: 100%;
+         height: 100%;
+    }
+}
+  
+  .card details { 
+    /* Cartão (details): largura 300px
+    altura automática
+    display inline-block */
+    width: 300px;
+    height: auto;
+    display: inline-block;
+  }
+
+  @media (max-width: 768px) {
+    .card details {
+        /* Cartão (details): largura 100% */
+         width: 100%;
+    }
+}
+  
+  .card details summary {
+    /* Cartão (sumário): tamanho da fonte 18px
+    espaçamento interno 10px */
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .card details summary {
+        /* Cartão (sumário): tamanho da fonte 16px */
+         font-size: 16px;
+    }
+}
+  
+  .card details p {
+    /* Cartão (parágrafo): espaçamento interno 0 10px */
+    padding: 0 10px;
+  }
+
+  @media (max-width: 768px) {
+    .card details p {
+        /* Cartão (parágrafo): tamanho da fonte 14px */
+         font-size: 14px;
+    }
+}
+  
+  .card details blockquote {
+    /* Cartão (citação): cor #777
+    estilo da fonte itálico */
+    color: #777;
+    font-style: italic;
+  }
