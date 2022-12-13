@@ -1,0 +1,170 @@
+documento é a janela do navegador (window)
+
+DOM - Document Object Mode
+
+Vai em inspesionar e então no console do navegador e digita document e window
+
+O document vai retornar uma informação, o nosso HTML
+
+O widow retorna tudo que engloba, que esta dentro da janela do navegador
+
+Pegar uma informação para então se manipular ela
+
+ARQUITETURA WEB
+
+innerHTML
+document.getElementById("id").innerHTML = "<etiqueta></etiqueta>"
+Informa ao documento que quer pegar aquele ID, e dentro daquele ID quero inserir o HTML
+Inserir um trecho de codigo HTML
+
+
+GIT
+
+Principais comandos do Git:
+
+git init
+
+git clone <remote-repo-address>
+
+git add <file.txt>
+
+git commit –m “Message”
+
+git status
+
+git push <remote-name> <branch-name>
+
+git checkout -b <branch-name>
+
+git pull
+
+git remote
+
+git status
+
+git reset 
+
+git merge <branch-name>
+
+Onde baixar? https://gitforwindows.org/
+
+Criar/Configurar/Verificar Repositorio:
+
+Transformar qualquer repositorio em Repositorio Git:
+git init <directory>
+
+Verificar localmente:
+git clone /path/to/local/repository
+
+Verificar remotamente:
+git clone user.name@host:/path/to/remote/repository
+
+Alterações ou adições:
+git add <nome_do_arquivo>
+
+Mudanças no HEAD:
+git commit –m “Adicionar qualquer mensagem sobre o commit aqui”
+
+Estabelecer ligação entre seu repositorio e um servidor remoto:
+git remote add origin <servidor>
+
+
+Ramos/branches
+
+Criar um novo branch:
+git checkout -b feature_n *
+
+Retornar ao master branch:
+git checkout master
+
+Excluir branch:
+git checkout -b feature_n
+
+
+Mesclar branch/merge:
+
+git merge feature_n.
+
+Se der conflitos, depois de resolver conflitos manualmente, fazer merged:
+git add <nome.arquivo>
+
+Visualizar alterações antes do merged:
+git diff <nome_branch_origem> <nome_branch_alvo>
+
+
+Criar tags:
+
+Criando uma tag:
+git tag 1.1.0 1c2d2d56fa
+
+
+Log:
+
+git log
+
+Rescuperar commit feitos por um unico usuario:
+git log --author =Smith
+
+Visualizar versão compactada do log (um commit por linha):
+git log --pretty=oneline
+
+Visualizar somente arquivos que foram alterados:
+git log --name-status
+
+Ver master branch mais recente:
+git fetch origin
+
+git reset --hard origin/master
+
+
+
+Diretório de trabalho: É o ambiente local
+
+Repositorio: Espaço onde armazena nosso codigo
+
+Espaço de armazenamento temporario (staging index/indice de teste)
+
+
+Git, Guia Pratico: https://rogerdudler.github.io/git-guide/index.pt_BR.html
+
+
+git init : Criar repositorio
+git clone url-do-repositorio : Clonar o repositório na máquina
+git remote add origin <servidor> : Adicionar o repositorio remoto na maquina
+git add : Adicionar mudança de repositorio local
+git commit -m "comentário de alteração" : Dar um Commit, ou seja confirmar mudança, vai para o espaço temporario esperando fazer o push
+git push origin nome-do-ramo : Envuiar as alterações para o remositorio
+
+ramo = branch : Ramificação do repositorio 
+
+git pull : atualizar um ramo, geralmente usado quando mais de uma pessoa está trabalhando no projeto
+git merge <branch> : Mesclar alterações de um ramo e outro
+
+
+
+Visualmente como costuma funcionar:
+
+WORKING DIRECTORY [LOCAL]
+
+git add ->
+git reset<-
+
+STAGING AREA [LOCAL]
+
+git commit->
+
+REPOSITORY [LOCAL]
+
+git push->
+<-git pull
+
+REPOSITORY [REMOTE]
+
+
+
+GitHUB - Plataforma online que pode se criar repositorio e hospedar projetos
+
+link: https://github.com/
+
+GitPages: https://pages.github.com/
+
