@@ -6,7 +6,7 @@
 
 Dicionarios de Mulheres Negras que fizeram e ainda fazem parte da história do Brasil e do Mundo
 
-[🔗 Clique aqui para acessar](https://soubeatrizkaroline.github.io/EuProgrAmo2_DicionarioMulheresNegras/)
+[🔗 Clique aqui para acessar](https://soubeatrizkaroline.github.io/EuProgrAmoFE2_DicionarioMulheresNegras/)
 
 ## 🛠 Tecnologias
 
